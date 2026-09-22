@@ -39,8 +39,8 @@
 
         .login_card {
             position: relative;
-            width: 450px;
-            height: 650px;
+            width: 23.44vw;
+            height: 69.19vh;
             background-color: rgba(255, 255, 255, 0.08);
             border-radius: 24px;
             border: 2px double rgba(255, 255, 255, 0.15);
@@ -54,8 +54,8 @@
 
         .circ {
             position: relative;
-            height: 70px;
-            width: 70px;
+            height: 7vh;
+            width: 3.5vw;
             border-radius: 24px;
             background: linear-gradient(#6c63ff, #00d4ff);
             font-size: 35px;
@@ -74,8 +74,8 @@
         }
 
         .inp {
-            width: 300px;
-            height: 50px;
+            width: 15.625vw;
+            height: 4.63vh;
             background-color: rgba(255, 255, 255, 0.07);
             border-radius: 15px;
             border: 2px solid rgba(255, 255, 255, 0.15);
@@ -86,8 +86,8 @@
 
 
         .b {
-            width: 290px;
-            height: 50px;
+            width: 15.625vw;
+            height: 4.63vh;
             background: linear-gradient(#6c63ff, #00bfff);
             border-radius: 15px;
             border: 2px solid;
@@ -104,6 +104,32 @@
             box-shadow: 0 10px 30px #6c63ff55;
             transform: scale(1.03);
         }
+        @media (max-width:1221px){
+            .login_card{
+                width: 65vw;
+                height: 70vh;
+            
+            }
+            .circ{
+                height: 8vh;
+                width: 4.5vw;
+
+            }
+            .inp{
+
+                width: 30vw;
+                height: 5.5vh;
+            }
+            .b{
+                
+                width: 40vw;
+                height: 5.5vh;
+            }
+
+            }
+            @media (max-height:700px){
+
+            }
     </style>
 </head>
 
@@ -123,7 +149,7 @@
                     <label>رمز حساب</label>
                 </div> <br><br><br><br>
                 <input type="password" placeholder="رمز خود را وارد کنید " class="inp" required><br>
-                <a href="">رمز را فراموش کرده‌اید؟</a><br><br><br><br><br>
+                <a href="">رمز را فراموش کرده‌اید؟</a><br><br><br>
                 <button class="b">login</button>
 
             </form>
