@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | site🧠</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .site-wrapper {
+            max-width: 62.5vw;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.0417vw;
+            flex-wrap: wrap;
+            text-align: center;
+
+
+
+
+        }
+
+        .h {
+            margin-top: 9.2593vh;
+
+        }
+
+        body {
+            background-color: black;
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+
+
+
+        }
+
+        .card1 {
+            width: 100%;
+            height: 35vh;
+            background-color: #0d0d20de;
+            border-bottom: 0.1562vw solid rgb(41, 212, 93);
+            padding-top: 4.6296vh;
+            color: white;
+            font-size: 1.0417vw;
+
+        }
+
+        .card2 {
+            height: 55.5556vh;
+            width: 100%;
+            background: radial-gradient(rgba(33, 245, 96, 0.288), #06060fe3);
+            color: white;
+            font-size: 1.6417vw;
+        }
+
+        .card3 {
+            width: 100%;
+            height: 23.1481vh;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 1.25vw;
+            border: 0.0521vw solid rgba(255, 255, 255, 0.12);
+            gap: 2.0833vw;
+            color: white;
+            font-size: 1.617vw;
+            padding-top: 4.6296vh;
+
+        }
+
+        .card4 {
+            width: 14.0625vw;
+            height: 29.1481vh;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 0.0521vw solid rgba(255, 255, 255, 0.12);
+            border-radius: 1.25vw;
+            font-size: 2.0vh;
+            display: block;
+            color: white;
+
+
+
+        }
+
+        .btn {
+            width: 10.4167vw;
+            height: 8.4815vh;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+            border-radius: 1.25vw;
+            border: 0.0521vw solid rgba(255, 255, 255, 0.12);
+            transition: 1s;
+            font-size: 0.8417vw;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(41, 212, 93);
+            transform: scale(1.1);
+        }
+        .card33{
+            width: 90vw;
+            height: 24.1481vh;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 1.25vw;
+            border: 0.0521vw solid #8B0000;
+            gap: 2.0833vw;
+            color: white;
+            font-size: 1.317vw;
+            padding-top: 0.9259vh;
+
+        }
+        .pic{
+            width: 39.0625vw;
+            height: 92.5926vh;
+            background-image: url(./fr.png);
+            border: 0.1562vw solid none;
+            border-radius: 1.25vw;
+
+        }
+        .pic1{
+            width: 39.0625vw;
+            height: 92.5926vh;
+            background-image: url(./le.png);
+            border: 0.1562vw solid none;
+            border-radius: 1.25vw;
+        }
+        .matn{
+            height: 9.2593vh;
+            width: 90vw;
+            
+        }
+        .head{
+            width: 100vw;
+            height: 7.4074vh;
+            background-color: rgba(37, 3, 100, 0.151);
+            display: flex;
+            top: 0;
+            border-radius: 0 0 24px 24px;
+            margin: 0.5208vw auto 0 ;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3.125vw;
+            position: fixed;
+
+        }
+        input{
+            width: 52.0833vw;
+            height: 3.7037vh;
+            border-radius: 1.25vw;
+            border: 0.1562vw solid white;
+        }
+    .con {
+        position: fixed;
+        left: 1.0417vw;
+        bottom: 1.8519vh;
+        z-index: 999;
+        }
+
+    .back_up {
+        height: 4.6296vh;
+        width: 2.6042vw;
+        border-radius: 50%;
+        background-color: rgb(39, 38, 44);
+        transition: 1s;
+        }
+    .back_up:hover{
+        background-color:  rgb(41, 212, 93) ;
+        transform: scale(1.09);
+    }
+     @media (max-width: 480px) {
+            .card4 {
+                width: 88vw;
+                height: 28vh;
+            }
+
+            .btn {
+                width: 80vw;
+                height: 7vh;
+                font-size: 3.0417vw;
+            }
+
+            .card3 {
+                width: 88vw;
+            }
+
+            .pic,
+            .pic1 {
+                width: 88vw;
+                height: 65vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .head h3 {
+                display: none;
+            }
+
+            .head form {
+                width: 90vw;
+            }
+        }
+    @media (max-height: 480px) {
+            .card4 {
+                width: 88vw;
+                height: 28vh;
+            }
+
+            .btn {
+                width: 80vw;
+                height: 7vh;
+                font-size: 3.0417vw;
+            }
+
+            .card3 {
+                width: 88vw;
+            }
+
+            .pic,
+            .pic1 {
+                width: 88vw;
+                height: 65vh;
+                
+            }
+
+            .head h3 {
+                display: none;
+            }
+
+            .head form {
+                width: 90vw;
+            }
+        }
+
+
+    </style>
+</head>
+<body dir="rtl">
+    <div class="con">
+        <div><button  class="back_up" style="font-size: 1.3021vw; border: 0.1042vw solid rgb(39, 38, 44);">🎧</button></div>
+    </div>
+    <div class="head">
+        <h3 style="color: rgb(41, 212, 93);"> Technology 🧠</h3>
+        <form><input type="search" placeholder="🔎 جست و جو کنید "></form>
+    </div>
+    <div class="container">
+        <div class="card1">
+            <h1 style="color: rgb(41, 212, 93) ; font-size: 3.0417vw;">Technology 🧠</h1>
+            <p>درباره کامپیوتر و طراحی وب سایت 🌐</p>
+            <a href="#website"><button class="btn" style="font-size: 1.4417vw;"> وبسایت🌐</button></a>
+            <a href="#computer"><button class="btn" style="font-size: 1.4417vw;">کامپیوتر 💻</button></a>
+            <a href="#games"><button class="btn" style="font-size: 1.417vw;">بازی ها 🎮</button></a>
+
+        </div>
+        <div class="card2">
+            <h1 style="color: rgb(41, 212, 93);">به دنیای تکنولوژی خوش آمدید🚀</h1><br><br>
+            <p>اینجا یک سایت آموزشی و سرگرمی درباره دنیای کامپیوتر و تکنولوژی است. </p>
+            
+            
+        </div>
+        <h1 id="website" style="color: rgb(41, 212, 93); display: block;" class="h">🌐 طراحی وبسایت چیست؟</h1><br>
+        <div class="card3">
+            <p>طراحی وب یعنی ساخت ظاهر و بخش‌های مختلف یک سایت برای نمایش در مرورگر. برای شروع معمولاً</p>
+            <p>HTML برای ساختار صفحه، CSS برای ظاهر و JavaScript برای رفتارهای تعاملی استفاده می‌شود. یک</p>
+            <p>سایت خوب باید خوانا، مرتب، سریع و در اندازه‌های مختلف صفحه نمایش قابل استفاده باشد.</p>
+
+
+
+        </div>
+        <div class="card4">
+            <h2 style="color: rgb(41, 212, 93);">HTML</h2><br>
+            <p>HTML اسکلت سایت است. با آن</p>
+            <p>عنوان، متن، تصویر، لینک، فرم و</p>
+            <p>بخش‌های مختلف صفحه را می‌سازیم.</p>
+        </div>
+        <div class="card4">
+            <h2 style="color: rgb(41, 212, 93);">CSS</h2><br>
+            <p>CSS ظاهر سایت را کنترل می‌کند؛</p>
+            <p>مثل رنگ، فونت، فاصله، اندازه،</p>
+            <p>کادر، چیدمان و واکنش‌گرایی.</p>
+        </div>
+        <div class="card4">
+            <h2 style="color: rgb(41, 212, 93);">Java Script</h2><br>
+            <p>JavaScript باعث می‌شود سایت</p>
+            <p>تعاملی شود؛ مثلاً با کلیک روی</p>
+            <p>دکمه چیزی تغییر کند یا یک</p>
+            <p>محاسبه انجام شود.</p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1 id="computer" style="color: rgb(41, 212, 93); display: block;" class="h">🖥️ کامپیوتر</h1>
+
+
+    <div class="card3">
+        <p style="color: white; font-size: 1.317vw; ">یک کامپیوتر از چند قطعه اصلی تشکیل می‌شود. پردازنده یا CPU عملیات
+            محاسباتی را انجام می‌دهد و</p>
+        <p style="color: white; font-size: 1.317vw; ">کارت گرافیک یا GPU وظیفه اصلی پردازش تصویر بازی را بر عهده دارد. RAM
+            برای اجرای هم‌زمان بازی و برنامه‌ها</p>
+        <p style="color: white; font-size: 1.317vw; ">مهم است و SSD سرعت بالا آمدن ویندوز و بازی‌ها را بهتر می‌کند. انتخاب
+            قطعات باید هماهنگ باشد تا یک قطعه قوی توسط قطعه دیگری محدود نشود.</p>
+        </p>
+    </div>
+        
+
+        <div class="container">
+            <div class="card4">
+                <h2 style="color: rgb(41, 212, 93);">CPU⚡</h2><br>
+                <p>پردازنده روی اجرای بازی، برنامه‌ها</p>
+                <p>و کارهای روزمره تأثیر زیادی دارد.</p>
+            </div>
+            <div class="card4">
+                <h2 style="color: rgb(41, 212, 93);">GPU🎨</h2><br>
+                <p>کارت گرافیک برای رندر کردن تصویر،</p>
+                <p>کیفیت گرافیکی و FPS بازی بسیار</p>
+                <p>مهم است.</p>
+
+            </div>
+            <div class="card4">
+                <h2 style="color: rgb(41, 212, 93);">RAM🧠</h2><br>
+                <p>رم فضای موقت مورد استفاده</p>
+                <p>برنامه‌هاست. ظرفیت و سرعت</p>
+                <p>مناسب آن به اجرای روان‌تر</p>
+                <p>سیستم کمک می‌کند.</p>
+            </div>
+            <div class="card4">
+                <h2 style="color: rgb(41, 212, 93);">SSD💾</h2><br>
+                <p>SSD نسبت به هارد دیسک</p>
+                <p>مکانیکی سرعت خواندن و نوشتن</p>
+
+
+                <p>بالاتری دارد و زمان بارگذاری را</p>
+                <p>کاهش می‌دهد.</p>
+
+
+            </div>
+            <div class="card4">
+                <h2 style="color: rgb(41, 212, 93);">FAN 🌡️</h2><br>
+                <p>خنک‌ کاری مناسب به حفظ دمای</p>
+                <p>قطعات و عملکرد پایدار سیستم</p>
+                <p>کمک می‌کند.</p>
+
+            </div>
+            <div class="card4">
+                <h2 style="color: rgb(41, 212, 93);">POWER 🔌</h2><br>
+                <p>منبع تغذیه باید توان و کیفیت</p>
+                <p>مناسب برای تمام قطعات سیستم</p>
+                <p>داشته باشد.</p>
+
+            </div>
+        </div>
+        <div class="container">
+            <h1 id="games" class="h" style="color: rgb(41, 212, 93);">دو بازی کامپیوتر 🎮</h1> 
+            <div class="card33" style="border-color: #558B2F;">
+                <h1 style="color: rgb(41, 212, 93); font-size: 1.3542vw; ">🚗 Grand Theft Auto V</h1>
+                <p>GTA V یک بازی جهان‌باز معروف است که در شهر خیالی Los Santos جریان دارد. بازیکن می‌تواند در بخش</p>
+                <p>داستانی با چند شخصیت بازی کند، مأموریت انجام دهد، در شهر رانندگی کند و فعالیت‌های مختلفی انجام</p>
+                <p>. نسخه PC به دلیل تنظیمات گرافیکی و پشتیبانی از مادها، بین بسیاری از بازیکنان محبوب است.</p>
+            </div>
+            <div class="card33"><h1 style="color: rgb(41, 212, 93); font-size: 1.3542vw;">🧟‍♂️️ Resident Evil 9</h1>
+                <p>Resident Evil Requiem که به عنوان Resident Evil 9 نیز شناخته می‌شود، یکی از عناوین جدید مجموعه</p>
+                <p>Resident Evil است. این مجموعه به خاطر فضای ترسناک، داستان، اکتشاف، معماها و مبارزه با موجودات</p>
+                <p>مختلف شناخته می‌شود.</p>
+            
+            </div>
+
+            
+        <div>
+            <div class="pic"></div>
+            <h1 style="color: white;">Franklin</h1>
+        </div>
+
+        <div>
+            <div class="pic1"></div>
+            <h1 style="color: white;">Leon S.Kennedy</h1>
+        </div>
+
+
+    </div>
+</body>
+</html>
