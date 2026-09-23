@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading. . .</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:radial-gradient(circle at top left, #6c63ff55, transparent 35%),#6c63ff55  ;
+        }
+
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .load_card{
+            height: 100px;
+            width: 100px;
+            border: 4px dotted black ;
+            border-radius: 50%;
+            border-top: white;
+            border-right: white;
+            animation: load 2s ease infinite;
+
+        }
+        @keyframes load {
+            0%{
+                transform: rotate(0deg);
+
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="load_card">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
