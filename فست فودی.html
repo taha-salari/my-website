@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fast|food</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .card1 {
+            height: 50vh;
+            width: 100vw;
+            background-image: url(./image_cleanup.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: beige;
+            padding-top: 7vh;
+            padding-right: 60vw;
+            text-align: center;
+        }
+
+        .card2 {
+            min-height: 60vh;
+            width: 100%;
+            background-color: beige;
+            color: black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .card3 {
+            height: 40vh;
+            width: 100vw;
+            background-color: white;
+            color: black;
+            padding-top: 2vh;
+            padding-right: 6vw;
+        }
+        .about{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items:start;
+        }
+
+        .head {
+            width: 100vw;
+            height: 7vh;
+            background-color: rgba(0, 0, 0, 0.911);
+            position: fixed;
+            color: beige;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            padding-right: 100px;
+        }
+
+        .matn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+            padding-right: 35vw;
+        }
+
+        .butn {
+            height: 4vh;
+            width: 10vw;
+            background-color: rgb(255, 174, 0);
+            border: 0.2vw solid rgb(255, 174, 0);
+            border-radius: 12px;
+            font-size: 1vw;
+        }
+
+        .butn:hover {
+            box-shadow: 0 0 10px rgb(255, 174, 0);
+        }
+
+        .btnh {
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid rgba(0, 0, 0, 0.911);
+            color: beige;
+            font-size: 1vw;
+            transition: 0.2s;
+        }
+
+        .btnh:hover {
+            color: rgb(255, 174, 0);
+        }
+
+        .foods {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: nowrap;
+            margin-top: 25px;
+        }
+
+        .p1 {
+            width: 25vw;
+            height: 30vh;
+            background-image: url(./1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+        }
+
+        .p2 {
+            width: 25vw;
+            height: 30vh;
+            background-image: url(./2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+        }
+
+        .p3 {
+            width: 25vw;
+            height: 30vh;
+            background-image: url(./3.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+        }
+
+        .p4 {
+            width: 25vw;
+            height: 30vh;
+            background-image: url(./4.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+        }
+
+        .p5 {
+            width: 25vw;
+            height: 30vh;
+            background-image: url(./5.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+        }
+        .p6{
+            width: 35vw;
+            height: 30vh;
+            background-image: url(./images.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 18px;
+        }
+
+        .food-card {
+            width: 25vw;
+            background-color: beige;
+            border-radius: 24px;
+            text-align: center;
+            overflow: hidden;
+            padding-right: 2vw;
+        }
+
+        .peice {
+            width: 7vw;
+            height: 3vh;
+            background-color: rgba(255, 174, 0, 0.151);
+            border-radius: 24px;
+            padding-right: 0.8vw;
+            padding-top: 0.2vh;
+            margin: 0 auto;
+        }
+
+        .butnforosh {
+            width: 10vw;
+            height: 3vh;
+            background-color: rgb(255, 174, 0);
+            border: 2px solid rgb(255, 174, 0);
+            border-radius: 16px;
+            color: black;
+            font-size: 1vw;
+            transition: 0.5s;
+        }
+
+        .butnforosh:hover {
+            box-shadow: 0 0 10px rgb(255, 174, 0);
+        }
+
+        .gh {
+            height: 5vh;
+            width: 100vw;
+            background-color: black;
+        }
+        .le{
+            padding-left: 40px;
+
+        }
+        .foot{
+            width: 100vw;
+            height: 60vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 4vh ;  
+
+        }
+
+    </style>
+</head>
+
+<body dir="rtl">
+
+    <div class="head">
+
+        <strong style="color: rgb(255, 174, 0); font-size: 1.5vw; font-weight: 700;">
+            رستوران لذیذ
+        </strong>
+
+        <div class="matn">
+            <a href="#home"><button class="btnh">خانه</button></a>
+            <a href="#menu"><button class="btnh">منو</button></a>
+            <a href="#about"><button class="btnh">درباره ما</button></a>
+            <a href="#tell"><button class="btnh">تماس با ما</button></a>
+        </div>
+
+    </div>
+    <div class="gh" id="home"></div>
+    <div class="card1">
+
+        <p style="font-size: 1.3vw;">
+            به رستوران لذیذ خوش امدید
+        </p>
+
+        <strong style="color: rgb(255, 174, 0); font-size: 3.2vw;"> طعم واقعی خوشمزگی</strong>
+
+        <br><br>
+
+        <p style="font-size: 1vw;"> ما در رستوران لذیذ بااستفاده از بهترین مواد اولیه و تازه ترین </p>
+
+        <p style="font-size: 1vw;"> مواد غذایی تجربه ای متفاوت از طعم و کیفیت را برای شما فراهم میکنیم.</p>
+
+        <br>
+
+        <a href="#menu" id="menu"><button class="butn">مشاهده منو</button> </a>
+
+    </div>
+
+    <div class="card2">
+
+        <h1>منو ها</h1>
+
+        <br>
+
+        <p>انواع غذا های خوش مزه و با کیفیت</p>
+
+        <div class="foods">
+            <div class="food-card">
+                <div class="p1"></div>
+                <h2>پاستا </h2><br>
+                <p>ترکیبات : ماکارانی ، مرغ ، سس سفید ،گوجه فرنگی و . . . </p><br>
+                <del style="color: gray;">350.000</del><br>
+                <div class="peice">
+                    <strong>تومان 249.000</strong><br>
+                </div><br>
+                <button class="butnforosh">افزودن به سبد🛒</button>
+                </div>
+            <div class="food-card">
+                <div class="p3"></div>
+                <h2>لازانیا</h2><br>
+                <p>ترکیبات :لایه لازانیا ، مرغ ، پنیر پیتزا ، خیارشور و . . . </p>
+                <del style="color: gray;">650.000</del><br>
+                <div class="peice">
+                    <strong>تومان 449.000</strong>
+                </div><br>
+                <button class="butnforosh">افزودن به سبد🛒</button>
+
+            </div>
+
+            <div class="food-card">
+                <div class="p2"></div>
+                <h2>همبرگر</h2><br>
+                <p>ترکیبات : گوشت همبرگر 80% ، پنیر گودا ، گوجه ، کاهو ، خیار شور و . . . </p><br>
+                <del style="color: gray;">500.000</del><br>
+                <div class="peice">
+                    <strong>تومان 379.000</strong>
+                </div><br>
+                <button class="butnforosh" id="about">افزودن به سبد🛒</button>
+            </div>
+            <div class="food-card">
+                <div class="p5"></div>
+                <h2>سیب زمینی سرخ کرده </h2><br>
+                <p>ترکیبات :سیب زمینی </p><br>
+                <del style="color: gray;">220.000</del><br>
+                <div class="peice">
+                    <strong>تومان 179.000</strong>
+                </div><br>
+                <button class="butnforosh">افزودن به سبد🛒</button>
+
+            </div>
+            <div class="food-card">
+                <div class="p4"></div>
+                <h2>پیتزا </h2><br>
+                <p>ترکیبات :خمیر پیتزا، سوسیس 80% گوشت قرمز ،پنیر پیتزا ، و . . . </p><br>
+                <del style="color: gray;">590.000</del><br>
+                <div class="peice">
+                    <strong>تومان 479.000</strong>
+                </div><br>
+                <button class="butnforosh">افزودن به سبد🛒</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="card3">
+        <div class="about" style="width: 100%;">
+
+        <div>
+            <h1>درباره ما</h1>
+
+            <br><br>
+
+            <p>رستوران لذیذ در سال 1398 با هدف ارائه غذاهای با کیفیت و محیطی دل نشین</p>
+
+            <br>
+
+            <p>تاسیس شد. ما همواره تلاش میکنیم تا با استفاده از بهترین مواد اولیه و</p>
+
+            <br>
+
+            <p>تجربه آشپز های حرفه ای، لحظات خوشی را برای شما عزیزان رقم بزنیم.</p>
+        </div>
+        <div class="le">
+            <div class="p6" ></div>
+        </div>
+
+
+
+
+
+    </div>
+    <br>
+    <hr id="tell">
+
+
+</body>
+<footer dir="ltr">
+
+    <div style="height: 20vh; width: 100vw;">
+
+    </div>
+        <div class="foot">
+        <div style="width: 100%; padding-left: 30px; ">
+            <h1 style="direction: rtl; padding-right: 30px;">تماس با ما </h1>
+
+            <br><br>
+            <hr>
+            <strong>
+                📞 021-54665598
+            </strong>
+            <hr>
+
+            <br><br>
+            <hr>
+            <strong>
+                ✉ username@gmail.com
+            </strong>
+            <hr>
+            <br><br>
+            <hr>
+            <strong>
+                ➕ فکوری ، فکوری 24 ، پلاک8
+            </strong>
+            <hr>
+        </div>
+    </div>
+</footer>
+</html>
